@@ -276,9 +276,9 @@ def ripeness(Boundary:list, Head:list, Apex: list, coefficient: float,intercept:
             Ripe_length = math.sqrt((i- Apex[0])**2 + (j-Apex[1])**2)
             Ripe_percentage = (Ripe_length/major_axis_length)*100
             
-            if Ripe_percentage >= 75:
+            if Ripe_percentage >= 70:
                 Ripeness = 'Ripe'
-            elif 75>Ripe_percentage >= 40:
+            elif 70>Ripe_percentage >= 40:
                 Ripeness = 'Semi-ripe'
             else: 
                 Ripeness = 'Unripe'
