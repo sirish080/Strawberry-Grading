@@ -375,11 +375,7 @@ def get_attributes(image, mask):
     
     updated_major_axis = [Head, Apex]
     
+    working_distance = Depth*1000  ##to mm
+    major_length = 0.0010217* major_axis_length*working_distance
     
-    
-    
-    
-    #working_distance = Depth*1000
-    #major_length = 0.0010217* major_axis_length*working_distance
-    
-    return [major_axis_length, updated_major_axis], Shape, [Ripeness, ripeness_boundary]
+    return [major_length, updated_major_axis], Shape, [Ripeness, ripeness_boundary]
